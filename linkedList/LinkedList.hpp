@@ -54,6 +54,10 @@ std::vector<T> LinkedList<T>::toVector() const
 	while( temp != nullptr )
 	{
 		vec.push_back(temp->getValue());
+		temp = temp->getNext();
+	}
+
+	return(vec);
 }
 
 template <typename T>
